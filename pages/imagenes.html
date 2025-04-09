@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Desarrollo Web - Tema 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de Desarrollo Web</h1>
+    </header>
+
+    <main>
+    <!-- Lección 1: Sin botón "Volver" -->
+    <section class="lesson" id="lesson1">
+        <h2>Lección 1: Introducción al HTML</h2>
+        <video id="video1" width="100%" controls>
+            <source src="./5 segundos.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+        <p>En esta lección aprenderás los fundamentos básicos de HTML.</p>
+        <button id="completeLesson1" class="btn">Marcar como completada</button>
+        <button id="nextLesson1" class="btn" style="display: none;">Pasar a la siguiente lección</button>
+    </section>
+
+    <!-- Lección 2: Con botón "Volver" -->
+    <section class="lesson" id="lesson2" style="display: none;">
+        <h2>Lección 2: Introducción al CSS</h2>
+        <video id="video2" width="100%" controls>
+            <source src="./5 segundos.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+        <p>En esta lección aprenderás los fundamentos de CSS.</p>
+        <button id="completeLesson2" class="btn">Marcar como completada</button>
+        <button id="nextLesson2" class="btn" style="display: none;">Pasar a la siguiente lección</button>
+        <!-- Botón para volver a la lección anterior -->
+        <button id="backLesson2" class="btn">Volver a la Lección 1</button>
+    </section>
+
+    <!-- Sección de Foro -->
+    <section id="foro">
+        <h2>Foro de Preguntas</h2>
+        <div id="foro-container">
+            <div class="mensaje">
+                <p><strong>Profesor:</strong> ¿Tienen alguna pregunta sobre la lección?</p>
+            </div>
+        </div>
+        <textarea id="pregunta" placeholder="Escribe tu pregunta aquí..."></textarea>
+        <button id="enviarPregunta" class="btn">Enviar Pregunta</button>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Curso de Desarrollo Web</p>
+    </footer>
+
+    <script src="script-imagenes.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Aprendizaje</title>
+    <link rel="stylesheet" href="./css/style.css"">
+    <script defer src="./script.js"></script>
+    <!-- Prims.JS -> Para importar código visible en mi página web (Modo oscuro) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+
+    <!-- CSS de Highlight.js
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+
+    <!-- JS de Highlight.js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script> -->
+
+    <!-- Activar el resaltado -->
+    <!-- <script>hljs.highlightAll();</script> -->
+
+    <!-- <script type="module">
+        import { getHighlighter } from 'https://esm.sh/shiki';
+        async function highlightCode() {
+        const highlighter = await getHighlighter({ theme: 'dracula' });
+        document.querySelectorAll('pre code').forEach((block) => {
+            const lang = block.getAttribute('data-lang') || 'plaintext';
+            block.innerHTML = highlighter.codeToHtml(block.textContent, { lang });
+        });
+        }
+        highlightCode();
+    </script> -->
+
+    <!-- CSS de CodeMirror -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/theme/dracula.min.css"> -->
+
+    <!-- JS de CodeMirror -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/codemirror.min.js"></script> -->
+
+    <!-- Módulos de lenguaje -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/mode/css/css.min.js"></script> -->
+
+    <!-- <script>
+        function createEditor(id, mode) {
+        CodeMirror.fromTextArea(document.getElementById(id), {
+            mode: mode,
+            theme: "dracula",
+            lineNumbers: true,
+            readOnly: "nocursor" // Evita que se edite el código
+        });
+        }
+        createEditor("html-code", "xml"); // HTML usa el modo XML en CodeMirror
+        createEditor("css-code", "css");
+        createEditor("js-code", "javascript");
+    </script> -->
+
+
+</head>
+<body>
+    <header>
+        <h1 style="font-family: Titulos;">DIGITALIZACIÓN</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#temas">Temas</a></li>
+                <li><a href="#foro">Foro</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="temas">
+            <h2>Temas disponibles</h2>
+            <div class="tema">
+                <h3>HTML Básico</h3>
+                <a href="./pages/html-basico.html" class="btn">Acceder</a>
+            </div>
+            <div class="tema">
+                <h3>Listas y enlaces</h3>
+                <a href="./pages/listas-y-enlaces.html" class="btn">Acceder</a>
+            </div>
+            <div class="tema">
+                <h3>Imagenes</h3>
+                <a href="./pages/imagenes.html" class="btn">Acceder</a>
+            </div>
+            <div class="tema">
+                <h3>Secciones</h3>
+                <a href="tema2.html" class="btn">Acceder</a>
+            </div>
+            <div class="tema">
+                <h3>Footer</h3>
+                <a href="tema2.html" class="btn">Acceder</a>
+            </div>
+            <div class="tema">
+                <h3>Botones</h3>
+                <a href="tema2.html" class="btn">Acceder</a>
+            </div>
+            <div class="tema">
+                <h3>CSS Básico</h3>
+                <a href="tema2.html" class="btn">Acceder</a>
+            </div>
+            <div class="tema">
+                <h3>Videos <iframe></iframe></h3>
+                <a href="tema2.html" class="btn">Acceder</a>
+            </div>
+            <div class="tema">
+                <h3>CSS Avanzado</h3>
+                <a href="tema2.html" class="btn">Acceder</a>
+            </div>
+            <div class="tema">
+                <h3>CSS Avanzado</h3>
+                <a href="tema2.html" class="btn">Acceder</a>
+            </div>
+            
+            <h2>Ejemplos de Código</h2>
+
+            <!-- <textarea id="html-code">
+                <h1>Hola, alumnos</h1>
+                <p>Este es un párrafo de ejemplo</p>
+            </textarea>
+
+            <textarea id="css-code">
+                body {
+                    background-color: #f4f4f4;
+                }
+            </textarea>
+
+            <textarea id="js-code">
+                console.log("Hola, alumnos");
+            </textarea> -->
+
+            <div class="code">
+<pre><code class="language-html">
+&lt;h1&gt;Hola, alumnos&lt;/h1&gt;
+&lt;p&gt;Este es un párrafo de ejemplo&lt;/p&gt;
+</code></pre>
+<pre><code class="language-css">
+body {
+    background-color: #f4f4f4;
+}
+</code></pre>
+<pre><code class="language-js">
+console.log("Hola, alumnos");
+</code></pre>
+            </div>
+        
+        <section id="foro">
+            <h2>Foro de preguntas</h2>
+            <div id="foro-container"></div>
+            <textarea id="pregunta" placeholder="Escribe tu pregunta..."></textarea>
+            <button id="enviarPregunta" class="btn">Enviar Pregunta</button>
+        </section>
+    </main>
+
+
+    
+
+    
+
+    <footer>
+        <p>&copy; 2025 Plataforma de Aprendizaje</p>
+    </footer>
+</body>
+</html>

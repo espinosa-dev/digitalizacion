@@ -1,0 +1,115 @@
+
+
+@font-face {
+    font-family: 'Titulos';
+    src: url('../fonts/Callifornia\ Signature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Textos';
+    src: url('../fonts/Retro\ Gaming.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Textos';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0084ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lesson {
+    margin-bottom: 30px;
+}
+
+.tema {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.tema:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+video {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 5px 2px;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+  /* Foro */
+#foro {
+    margin-top: 40px;
+    background-color: #e9e9e9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#foro-container {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.mensaje {
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #0084ff;
+    color: white;
+    padding: 10px;
+}
+

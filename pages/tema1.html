@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 1: Introducción a HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../script.js">
+</head>
+<body>
+    <header>
+        <h1>Tema 1: Introducción a HTML</h1>
+    </header>
+
+    <main>
+        <h2>Contenido del Tema</h2>
+
+        <!-- Sección 1: Vídeo explicativo -->
+        <section class="tema">
+            <h3>Vídeo Explicativo: ¿Qué es HTML?</h3>
+            <video width="100%" controls>
+                <source src="videos/video-tema1.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de vídeo.
+            </video>
+            <p>En este vídeo aprenderás los conceptos básicos de HTML, cómo crear una estructura de página web y las etiquetas esenciales.</p>
+        </section>
+
+        <!-- Sección 2: Material PDF -->
+        <section class="tema">
+            <h3>PDF: Guía Rápida de HTML</h3>
+            <p>Descarga este PDF para repasar los conceptos que aprenderás en este tema.</p>
+            <a href="pdf/introduccion-a-html.pdf" target="_blank" class="btn">Descargar PDF</a>
+        </section>
+
+        <!-- Sección 3: Imágenes -->
+        <section class="tema">
+            <h3>Ejemplo de Estructura HTML</h3>
+            <p>A continuación se muestra un ejemplo de la estructura básica de una página web en HTML:</p>
+            <img src="images/estructura-html.png" alt="Estructura HTML" width="100%" />
+        </section>
+
+        <!-- Sección 4: Ejercicio práctico -->
+        <section class="tema">
+            <h3>Ejercicio práctico</h3>
+            <p>Ahora que has visto el vídeo y leído el material, crea una página HTML básica con las siguientes secciones:</p>
+            <ul>
+                <li>Un título principal de la página.</li>
+                <li>Un párrafo con tu descripción.</li>
+                <li>Una lista ordenada de tus intereses.</li>
+                <li>Un enlace a otro sitio web (puede ser cualquier página que te interese).</li>
+            </ul>
+            <p>Una vez que hayas creado tu archivo, sube el código aquí:</p>
+            <textarea id="codigoAlumno" placeholder="Escribe tu código aquí..."></textarea>
+            <button id="subirCodigo" class="btn">Subir código</button>
+            <p id="mensajeConfirmacion" style="display: none;">¡Código subido con éxito!</p> <!-- Mensaje de confirmación -->
+        </section>
+        <section class="tema">
+            <h3>Tu Código Subido:</h3>
+            <pre id="codigoSubido"></pre> <!-- Muestra el código -->
+        </section>
+        
+
+        <!-- Sección 5: Foro de preguntas y respuestas -->
+        <section class="tema">
+            <h3>Foro de Preguntas</h3>
+            <p>Si tienes alguna pregunta sobre este tema, ¡escribe tu pregunta aquí y el profesor te responderá pronto!</p>
+            <textarea id="pregunta" placeholder="Escribe tu pregunta..."></textarea>
+            <button id="enviarPregunta" class="btn">Enviar Pregunta</button>
+
+            <div id="foro-container">
+                <!-- Aquí se cargarán las preguntas y respuestas -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Clases de Tecnología</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

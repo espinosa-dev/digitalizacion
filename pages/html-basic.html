@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Desarrollo Web - Tema 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de Desarrollo Web</h1>
+    </header>
+
+    <main>
+    <!-- Lección 1: Sin botón "Volver" -->
+    <section class="lesson" id="lesson1">
+        <h2>Lección 1: Introducción al HTML</h2>
+        <video id="video1" width="100%" controls>
+            <source src="./5 segundos.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+        <p>En esta lección aprenderás los fundamentos básicos de HTML.</p>
+        <button id="completeLesson1" class="btn">Marcar como completada</button>
+        <button id="nextLesson1" class="btn" style="display: none;">Pasar a la siguiente lección</button>
+    </section>
+
+    <!-- Lección 2: Con botón "Volver" -->
+    <section class="lesson" id="lesson2" style="display: none;">
+        <h2>Lección 2: Introducción al CSS</h2>
+        <video id="video2" width="100%" controls>
+            <source src="./5 segundos.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+        <p>En esta lección aprenderás los fundamentos de CSS.</p>
+        <button id="completeLesson2" class="btn">Marcar como completada</button>
+        <button id="nextLesson2" class="btn" style="display: none;">Pasar a la siguiente lección</button>
+        <!-- Botón para volver a la lección anterior -->
+        <button id="backLesson2" class="btn">Volver a la Lección 1</button>
+    </section>
+
+    <!-- Sección 2: Material PDF -->
+    <section class="tema">
+        <h3>PDF: Guía Rápida de HTML</h3>
+        <p>Descarga este PDF para repasar los conceptos que aprenderás en este tema.</p>
+        <a href="pdf/introduccion-a-html.pdf" target="_blank" class="btn">Descargar PDF</a>
+    </section>
+
+    <!-- Sección 3: Imágenes -->
+    <section class="tema">
+        <h3>Ejemplo de Estructura HTML</h3>
+        <p>A continuación se muestra un ejemplo de la estructura básica de una página web en HTML:</p>
+        <img src="images/estructura-html.png" alt="Estructura HTML" width="100%" />
+    </section>
+
+    <!-- Sección 4: Ejercicio práctico -->
+    <section class="tema">
+        <h3>Ejercicio práctico</h3>
+        <p>Ahora que has visto el vídeo y leído el material, crea una página HTML básica con las siguientes secciones:</p>
+        <ul>
+            <li>Un título principal de la página.</li>
+            <li>Un párrafo con tu descripción.</li>
+            <li>Una lista ordenada de tus intereses.</li>
+            <li>Un enlace a otro sitio web (puede ser cualquier página que te interese).</li>
+        </ul>
+        <p>Una vez que hayas creado tu archivo, sube el código aquí:</p>
+        <textarea id="codigoAlumno" placeholder="Escribe tu código aquí..."></textarea>
+        <button id="subirCodigo" class="btn">Subir código</button>
+        <p id="mensajeConfirmacion" style="display: none;">¡Código subido con éxito!</p> <!-- Mensaje de confirmación -->
+    </section>
+    <section class="tema">
+        <h3>Tu Código Subido:</h3>
+        <pre id="codigoSubido"></pre> <!-- Muestra el código -->
+    </section>
+    
+
+    <!-- Sección 5: Foro de preguntas y respuestas -->
+    <section class="tema">
+        <h3>Foro de Preguntas</h3>
+        <p>Si tienes alguna pregunta sobre este tema, ¡escribe tu pregunta aquí y el profesor te responderá pronto!</p>
+        <textarea id="pregunta" placeholder="Escribe tu pregunta..."></textarea>
+        <button id="enviarPregunta" class="btn">Enviar Pregunta</button>
+
+        <div id="foro-container">
+            <!-- Aquí se cargarán las preguntas y respuestas -->
+        </div>
+    </section>
+    <section class="code-correction">
+        <div class="container">
+            <h2>Corrige el código:</h2>
+            <textarea id="codeArea" rows="10" cols="50" placeholder="Escribe tu código aquí..."></textarea>
+            <br>
+            <button id="checkBtn">Corregir Código</button>
+            <div id="popup" class="popup">
+                <p id="popupMessage"></p>
+                <pre id="correctCode" style="display:none;"></pre>
+            </div>
+        </div>
+
+        <style>
+            .container {
+                text-align: left; 
+            }
+
+            .container h2 {
+                text-align: center;
+            }
+
+            #codeArea {
+                width: 97.5%;
+                margin-top: 20px;
+                padding: 10px;
+                font-family: monospace;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #checkBtn {
+                padding: 10px 15px;
+                margin-top: 20px;
+                background-color: #0084ff;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 25px;
+                font-size: 15px;
+                font-family: 'Textos';
+                margin-left: 350px;
+            }
+
+            button:disabled {
+                background-color: #ccc;
+            }
+
+            .popup {
+                display: none;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                padding: 20px;
+                margin-top: 20px;
+                border-radius: 10px;
+                width: 80%;
+                max-width: 600px;
+                margin: auto;
+                justify-content: left;
+                align-items: left;
+                text-align: left;
+            }
+
+            #correctCode {
+                background-color: #222;
+                color: #fff;
+                padding: 15px;
+                margin-top: 20px;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                justify-content: left;
+                align-items: left !important;
+                text-align: left;
+            }
+        </style>
+
+        <script src="script-html-basico.js"></script>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Curso de Desarrollo Web Básico</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
