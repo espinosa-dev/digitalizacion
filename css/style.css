@@ -14,9 +14,6 @@
     font-style: normal;
 }
 
-html {
-    scroll-behavior: smooth; /* Hace que el scroll sea suave */
-}
 
 body {
     font-family: 'Textos';
