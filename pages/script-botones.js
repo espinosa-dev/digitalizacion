@@ -10,7 +10,7 @@ const correctCode = `<!DOCTYPE html>
 </html>`;
 
 // Llamadas a los elementos
-const codeArea = document.getElementById("codeArea");
+const codeArea = document.getElementById("codeArea");BigInt64Array
 const checkBtn = document.getElementById("checkBtn");
 const popup = document.getElementById("popup");
 const popupMessage = document.getElementById("popupMessage");

@@ -74,3 +74,4 @@ document.getElementById("subirCodigo").addEventListener("click", function() {
         alert("Por favor, escribe tu código antes de enviarlo.");
     }
 });
+
